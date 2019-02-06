@@ -1,0 +1,9 @@
+$(document).ready(function(){
+	$('#menuToggle').click(function(){
+		$("#menu").css({'margin':'0'}).slideToggle("slow",function(){
+			if($(this).css("display")==="none"){
+				$(this).css({"display":''});
+			}
+		});
+	});
+});

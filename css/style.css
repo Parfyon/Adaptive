@@ -1,0 +1,256 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat";
+  color: #515151;
+}
+body h1 {
+  margin-top: 0;
+}
+body ul {
+  margin: 0;
+}
+body li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+span {
+  color: #fff;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+a:visited {
+  color: white;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+/*-------------------------------NAV_BAR*/
+#Navigation {
+  display: inline;
+  color: #fff;
+}
+#menuToggle {
+  background-color: #000;
+  padding: 2.7%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#menuToggle p {
+  display: inline;
+}
+.navBar {
+  background-color: #373c3f;
+}
+/*------------------------------/NAV_BAR*/
+/*-----------------------------------HEADER*/
+header {
+  background-image: linear-gradient(#19b4c6, #078aa4);
+  padding: 1%;
+  padding-top: 3%;
+  color: #fff;
+}
+header h1 {
+  margin-top: 0;
+}
+/*-----------------------------------HEADER*/
+/*-----------------------------------robin*/
+.robin {
+  display: flex;
+}
+.robin div {
+  text-align: center;
+  vertical-align: middle;
+}
+.robin #first {
+  background-color: #27212c;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.robin #second {
+  background-color: #bc3183;
+  width: 20%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  background-color: #ebebeb;
+  padding: 2% 0;
+}
+footer h1 {
+  color: #088ca5;
+}
+/*----------------------------------/robin*/
+@media (max-width: 980px) {
+  .square {
+    font-size: 7rem;
+    background-color: #5b0fa1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*-----------------------------@@@@@-320-@@@@*/
+@media (max-width: 320px) {
+  /*		html{
+			font-size: 
+		}*/
+  #menu {
+    display: none;
+  }
+  .navBar {
+    position: relative;
+    padding: 3.2% 0;
+  }
+  .square {
+    height: 275px;
+  }
+  .bridge {
+    height: 275px;
+    background-image: url('../img/bridge320.png');
+  }
+  .girl {
+    height: 277px;
+    background-image: url('../img/girl320.png');
+    background-position: top;
+  }
+}
+/*-----------------------------@@@@@-320-@@@@*/
+@media (min-width: 320px) and (max-width: 639px) {
+  .square {
+    height: 400px;
+    background-color: #5b0fa1;
+  }
+  .bridge {
+    height: 400px;
+    background-image: url('../img/bridge640.png');
+    background-position: bottom;
+  }
+  .girl {
+    height: 300px;
+    background-image: url('../img/girl640.png');
+    background-position: top;
+  }
+}
+/*-----------------------------@@@@@-640-@@@@*/
+@media (min-width: 640px) {
+  html {
+    font-size: 25px;
+  }
+  #menu {
+    display: none;
+  }
+  .navBar {
+    position: relative;
+    padding: 3.1% 0;
+  }
+  header {
+    padding: 15% 0;
+  }
+  .robin {
+    height: 90px;
+  }
+  .square {
+    height: 550px;
+  }
+  .square span {
+    color: #fff;
+    font-size: 7rem;
+  }
+  .bridge {
+    height: 550px;
+    background-image: url('../img/bridge640.png');
+  }
+  .girl {
+    height: 555px;
+    background-image: url('../img/girl640.png');
+  }
+}
+/*-----------------------------@@@@@-640-@@@@*/
+@media (min-width: 641px) and (max-width: 979px) {
+  .bridge {
+    height: 600px;
+    background-image: url('../img/bridge980.png');
+    background-size: cover;
+    background-position: bottom;
+  }
+  .girl {
+    height: 600px;
+    background-image: url('../img/girl980.png');
+    background-size: cover;
+    background-position: top;
+  }
+}
+/*-----------------------------@@@@@-980-@@@@*/
+@media (min-width: 980px) {
+  body {
+    height: 800px;
+  }
+  #menuToggle,
+  #Navigation {
+    display: none;
+  }
+  .navBar {
+    padding: 2%;
+  }
+  #menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  header {
+    padding: 15%;
+  }
+  .robin {
+    height: 120px;
+  }
+  .fig {
+    width: 100%;
+    display: flex;
+    height: 70vh;
+  }
+  .fig div {
+    height: 100%;
+    width: 33.3333%;
+  }
+  .square {
+    background-color: #5b0fa1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .square span {
+    color: #fff;
+    font-size: 4rem;
+  }
+  .bridge {
+    background-image: url('../img/bridge980.png');
+    background-size: cover;
+    background-position: bottom;
+  }
+  .girl {
+    background-image: url('../img/girl980.png');
+    background-size: cover;
+    background-position: bottom;
+  }
+  footer .someWraper {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .someWraper h1 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  footer .someWraper p {
+    width: 40%;
+  }
+}
